@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <base target="_top">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <?!= include('javascript'); ?>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <form id="customerInfoForm" onsubmit="customerInfoSubmit(this) || serveRoofOneInfo()">
+                        <p class="h4 mb-4 text-center">Customer Info</p>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="roofSize5">Roof Size Type 5</label>
+                                <input type="text" class="form-control" id="roofSize5" name="roofSize5" placeholder="Enter Sq Ft from Takeoff">
+                            </div> 
+                            <button type="submit" class="btn btn-primary btn-block">Next</button>
+                    </form>
+                    <div id="output"></div>
+                </div>
+            </div>      
+        </div>
+    </body>
+</html>
